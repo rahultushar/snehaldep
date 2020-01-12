@@ -1,3 +1,4 @@
+  
 version: 0.0
 os: linux
 files:
@@ -13,10 +14,10 @@ permissions:
       - file
 hooks:
   BeforeInstall:
-    - location: scripts/install.sh
+    - location: script/install.sh
       timeout: 3600
       runas: root
   ApplicationStart:
-    - location: scripts/start.sh
+    - location: script/start.sh
       timeout: 3600
       runas: root
